@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Coche from './Components/Coche';
+import Salario from './Components/Salario';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Coche matricula="matri1" precio={ 1000}/>
+     <Salario salario_total ={1000} impuesto={15}/>
+    
     </div>
   );
 }
